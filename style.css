@@ -65,17 +65,18 @@ h1 span + span {
 }
 
 #criteria {
-  background-image: url('cordelia_criteria.png'); /* Update with the correct path */
-  background-size: cover; /* Make the image cover the entire screen */
+  background-image: url('cordelia_criteria.png'); /* Ensure this path is correct */
+  background-size: cover; /* Make the image cover the entire section */
   background-position: center center; /* Center the image */
-  background-attachment: fixed; /* Fix the background so it doesn't scroll with content */
+  /* background-attachment: fixed; Remove for testing */
   height: 100vh; /* Make the section take up the full height of the viewport */
+  min-height: 100vh; /* Ensure a minimum height of 100vh */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white; /* Text color to stand out against the background */
   text-align: center; /* Center the text */
-  padding: 20px;
+  padding: 20px; /* Space around content */
 }
 
 #criteria h2 {
@@ -86,6 +87,7 @@ h1 span + span {
 #criteria p {
   font-size: 1.2em;
 }
+
 
 /* Full page background image for promise.html */
 #promise {
