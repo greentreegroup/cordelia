@@ -70,6 +70,33 @@ body {
   padding: 0;
 }
 
+/* Home Section */
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: skyblue;
+}
+
+/* Title styling */
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+/* Underline for the second line */
+h1 span + span {
+  text-decoration: underline;
+}
+
+/* Color for the word "One" */
+.orange-text {
+  color: orange;
+}
+
+
 /* Full page background image for promise.html */
 #promise {
   background-image: url('cordelia_promise.jpg'); /* Update with the correct path */
