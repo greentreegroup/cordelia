@@ -2,8 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Basic styling for the navigation */
 nav {
-  background-color: #333;
+  background-color: #333; /* dark grey background for the nav */
   padding: 10px;
 }
 
@@ -27,32 +28,38 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Style the sections */
 section {
   padding: 60px 20px;
   margin: 20px 0;
-  height: 100vh; 
+  height: 100vh; /* Make each section take up the full height of the viewport */
 }
 
+/* Background colors for the sections */
 #home {
-  background-color: #f4f4f4;
+  background-color: skyblue; /* Sky Blue for Home section */
+}
+
+#criteria {
+  background-color: black; /* Black for Criteria section */
+  color: white; /* White text on black background */
+}
+
+#promise {
+  background-color: white; /* White for Our Promise section */
 }
 
 #about {
-  background-color: #e4e4e4;
+  background-color: darkgrey; /* Dark Grey for About section */
 }
 
 #contact {
-  background-color: #d4d4d4;
+  background-color: #f4f4f4; /* Light Grey for Contact section */
 }
 
+/* Add some padding to the body for overall layout */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
-
