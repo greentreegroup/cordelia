@@ -37,24 +37,28 @@ section {
 
 /* Background colors for the sections */
 #home {
-  background-color: skyblue; /* Sky Blue for Home section */
+  background-color: white; 
+  color: black; 
 }
 
 #criteria {
-  background-color: black; /* Black for Criteria section */
-  color: white; /* White text on black background */
+  background-color: skyblue; 
+  color: black; 
 }
 
 #promise {
-  background-color: white; /* White for Our Promise section */
+  background-color: black; 
+  color: white; 
 }
 
 #about {
-  background-color: darkgrey; /* Dark Grey for About section */
+  background-color: white;
+  color: black; 
 }
 
 #contact {
-  background-color: #f4f4f4; /* Light Grey for Contact section */
+  background-color: #darkgrey; 
+  color: white; 
 }
 
 /* Add some padding to the body for overall layout */
