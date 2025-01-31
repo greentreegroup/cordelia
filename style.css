@@ -135,10 +135,85 @@ h1 span + span {
   font-size: 1.2em;
 }
 
+/* Contact Section Styling */
 #contact {
-  background-color: darkgrey; 
-  color: white; 
+  padding: 50px 20px;
+  background-color: #f7f7f7;
 }
+
+/* Contact Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.contact-header p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.contact-header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-header a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
 
 /* Add some padding to the body for overall layout */
 body {
