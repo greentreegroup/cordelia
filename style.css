@@ -40,38 +40,6 @@ section {
 
 /* Background colors for the sections */
 #home {
-  background-color: white; 
-  color: black; 
-}
-
-#criteria {
-  background-color: skyblue; 
-  color: black; 
-}
-
-#promise {
-  background-color: white;
-}
-
-#about {
-  background-color: white;
-  color: black; 
-}
-
-#contact {
-  background-color: #darkgrey; 
-  color: white; 
-}
-
-/* Add some padding to the body for overall layout */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Home Section */
-#home {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +64,10 @@ h1 span + span {
   color: orange;
 }
 
+#criteria {
+  background-color: skyblue; 
+  color: black; 
+}
 
 /* Full page background image for promise.html */
 #promise {
@@ -120,4 +92,26 @@ h1 span + span {
 #promise p {
   font-size: 1.2em;
 }
+
+#about {
+  background-color: white;
+  color: black; 
+}
+
+#contact {
+  background-color: #darkgrey; 
+  color: white; 
+}
+
+/* Add some padding to the body for overall layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
 
