@@ -4,9 +4,12 @@ html {
 
 /* Basic styling for the navigation */
 nav {
-  background-color: #333; /* dark grey background for the nav */
+  display: flex;
+  justify-content: center;
+  background-color: #333;
   padding: 10px;
 }
+
 
 nav ul {
   list-style-type: none;
