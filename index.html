@@ -46,7 +46,42 @@
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <!-- Add your contact content here -->
+    <!-- Contact Info Header -->
+    <div class="contact-header">
+      <h1>Cordelia Capital</h1>
+      <p>Email: <a href="mailto:alisa@cordelia.capital">alisa@cordelia.capital</a></p>
+      <p>Location: Chicago, IL</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <form action="mailto:alisa@cordelia.capital" method="post" enctype="text/plain">
+        <!-- Name Field -->
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <!-- Phone Field -->
+        <div class="form-field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <!-- Email Field -->
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <!-- Message Field (Larger Box) -->
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="8" required></textarea>
+        </div>
+
+      <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
   </section>
 
   <!-- Home Section Content (index.html) -->
