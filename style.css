@@ -65,10 +65,9 @@ h1 span + span {
 }
 
 #criteria {
-  background-image: url('cordelia_promise.png'); /* Update with the correct path */
+  background-image: url('cordelia_criteria.png'); /* Update with the correct path */
   background-size: cover; /* Make the image cover the entire screen */
   background-position: center center; /* Center the image */
-  background-attachment: fixed; /* Fix the background so it doesn't scroll with content */
   height: 100vh; /* Make the section take up the full height of the viewport */
   display: flex;
   justify-content: center;
@@ -116,7 +115,6 @@ h1 span + span {
   background-image: url('cordelia_about.png'); /* Ensure the path is correct */
   background-size: cover; /* Make the image cover the entire screen */
   background-position: center center; /* Center the image */
-  background-attachment: fixed; /* Fix the background so it doesn't scroll with content */
   height: 100vh; /* Make the section take up the full height of the viewport */
   display: flex;
   justify-content: center;
