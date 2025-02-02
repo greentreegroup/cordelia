@@ -46,7 +46,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 25vh;
   text-align: center;
   background-color: white;
 }
@@ -89,7 +89,7 @@ h1 {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,7 +112,7 @@ h1 {
   background-image: url('cordelia_about.png');
   background-size: cover;
   background-position: center center;
-  height: 50vh; /* Change this to 50vh instead of 100vh */
+  height: 100vh; /* Change this to 50vh instead of 100vh */
   display: flex;
   justify-content: center;
   align-items: center;
