@@ -42,11 +42,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 50vh; /* Ensure this height is respected */
   text-align: center;
   background-color: white;
   margin: 0;
   padding: 0;
+  overflow: hidden; /* Prevent overflow if content exceeds 50vh */
 }
 
 /* Title styling */
