@@ -112,7 +112,7 @@ h1 {
   background-image: url('cordelia_about.png');
   background-size: cover;
   background-position: center center;
-  height: 100vh; /* Change this to 50vh instead of 100vh */
+  height: 50vh; /* Change this to 50vh instead of 100vh */
   display: flex;
   justify-content: center;
   align-items: center;
