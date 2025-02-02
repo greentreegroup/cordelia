@@ -1,5 +1,8 @@
-html {
-  scroll-behavior: smooth;
+/* Apply border-box box-sizing to make height calculation more predictable */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /* Basic styling for the navigation */
@@ -9,7 +12,6 @@ nav {
   background-color: #333;
   padding: 10px;
 }
-
 
 nav ul {
   list-style-type: none;
@@ -31,14 +33,15 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Style the sections */
+/* Style the sections with reduced padding to fit within 50vh */
 section {
-  padding: 60px 20px;
-  margin: 20px 0;
-  height: 50vh; /* Make each section take up the full height of the viewport */
+  padding: 20px; /* Reduced padding for sections */
+  margin: 0; /* Remove margin between sections to avoid extra space */
+  height: 50vh; /* Ensure each section takes up 50% of the viewport height */
+  overflow: hidden; /* Prevent any overflowing content */
 }
 
-/* Background colors for the sections */
+/* Home Section */
 #home {
   display: flex;
   justify-content: center;
@@ -48,33 +51,27 @@ section {
   background-color: white;
 }
 
-/* Title styling */
 h1 {
   font-size: 3em;
   margin: 0;
 }
 
-/* Underline for the second line */
-h1 span + span {
-  text-decoration: underline;
-}
-
-/* Color for the word "One" */
 .orange-text {
   color: orange;
 }
 
+/* Criteria Section */
 #criteria {
-  background-image: url('cordelia_criteria.png'); /* Update with the correct path */
-  background-size: cover; /* Make the image cover the entire screen */
-  background-position: center center; /* Center the image */
-  height: 50vh; /* Make the section take up the full height of the viewport */
+  background-image: url('cordelia_criteria.png');
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white; /* Text color to stand out against the background */
-  text-align: center; /* Center the text */
-  padding: 20px;
+  color: white;
+  text-align: center;
+  padding: 0; /* No extra padding, let the background image control space */
 }
 
 #criteria h2 {
@@ -86,19 +83,19 @@ h1 span + span {
   font-size: 1.2em;
 }
 
-/* Full page background image for promise.html */
+/* Promise Section */
 #promise {
-  background-image: url('cordelia_promise.png'); /* Update with the correct path */
-  background-size: cover; /* Make the image cover the entire screen */
-  background-position: center center; /* Center the image */
-  background-attachment: fixed; /* Fix the background so it doesn't scroll with content */
-  height: 50vh; /* Make the section take up the full height of the viewport */
+  background-image: url('cordelia_promise.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white; /* Text color to stand out against the background */
-  text-align: center; /* Center the text */
-  padding: 20px;
+  color: white;
+  text-align: center;
+  padding: 0; /* No extra padding */
 }
 
 #promise h2 {
@@ -110,18 +107,18 @@ h1 span + span {
   font-size: 1.2em;
 }
 
-/* New CSS for the About section */
+/* About Section */
 #about {
-  background-image: url('cordelia_about.png'); /* Ensure the path is correct */
-  background-size: cover; /* Make the image cover the entire screen */
-  background-position: center center; /* Center the image */
-  height: 100vh; /* Make the section take up the full height of the viewport */
+  background-image: url('cordelia_about.png');
+  background-size: cover;
+  background-position: center center;
+  height: 50vh; /* Change this to 50vh instead of 100vh */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white; /* Text color to stand out against the background */
-  text-align: center; /* Center the text */
-  padding: 20px;
+  color: white;
+  text-align: center;
+  padding: 0; /* No extra padding */
 }
 
 #about h2 {
@@ -133,13 +130,12 @@ h1 span + span {
   font-size: 1.2em;
 }
 
-/* Contact Section Styling */
+/* Contact Section */
 #contact {
   padding: 50px 20px;
   background-color: #f7f7f7;
 }
 
-/* Contact Header */
 .contact-header {
   text-align: center;
   margin-bottom: 40px;
@@ -164,7 +160,7 @@ h1 span + span {
   text-decoration: underline;
 }
 
-/* Contact Form Styling */
+/* Contact Form */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -212,16 +208,9 @@ button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-
-/* Add some padding to the body for overall layout */
+/* Body styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
-
