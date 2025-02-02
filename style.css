@@ -1,15 +1,40 @@
-/* Apply box-sizing globally so padding and borders are included in the height */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
+}
+
+/* Basic styling for the navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Style the sections */
 section {
-  padding: 0; /* Adjust padding to fit within 100vh */
-  margin: 0; /* Remove margin that may push beyond the viewport */
-  height: 100vh; /* Full viewport height */
+  padding: 60px 20px;
+  margin: 20px 0;
+  height: 100vh; /* Make each section take up the full height of the viewport */
 }
 
 /* Background colors for the sections */
@@ -17,14 +42,20 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   text-align: center;
   background-color: white;
 }
 
+/* Title styling */
 h1 {
   font-size: 3em;
   margin: 0;
+}
+
+/* Underline for the second line */
+h1 span + span {
+  text-decoration: underline;
 }
 
 /* Color for the word "One" */
@@ -33,51 +64,154 @@ h1 {
 }
 
 #criteria {
-  background-image: url('cordelia_criteria.png'); /* Ensure correct path */
-  background-size: cover;
-  background-position: center center;
-  height: 100vh; /* Full viewport height */
+  background-image: url('cordelia_criteria.png'); /* Update with the correct path */
+  background-size: cover; /* Make the image cover the entire screen */
+  background-position: center center; /* Center the image */
+  height: 100vh; /* Make the section take up the full height of the viewport */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-align: center;
-  padding: 0; /* Adjust padding to fit within 100vh */
+  color: white; /* Text color to stand out against the background */
+  text-align: center; /* Center the text */
+  padding: 20px;
 }
 
+#criteria h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+#criteria p {
+  font-size: 1.2em;
+}
+
+/* Full page background image for promise.html */
 #promise {
-  background-image: url('cordelia_promise.png'); /* Ensure correct path */
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  height: 100vh; /* Full viewport height */
+  background-image: url('cordelia_promise.png'); /* Update with the correct path */
+  background-size: cover; /* Make the image cover the entire screen */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Fix the background so it doesn't scroll with content */
+  height: 100vh; /* Make the section take up the full height of the viewport */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-align: center;
-  padding: 0; /* Adjust padding to fit within 100vh */
+  color: white; /* Text color to stand out against the background */
+  text-align: center; /* Center the text */
+  padding: 20px;
 }
 
+#promise h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+#promise p {
+  font-size: 1.2em;
+}
+
+/* New CSS for the About section */
 #about {
-  background-image: url('cordelia_about.png'); /* Ensure correct path */
-  background-size: cover;
-  background-position: center center;
-  height: 100vh; /* Full viewport height */
+  background-image: url('cordelia_about.png'); /* Ensure the path is correct */
+  background-size: cover; /* Make the image cover the entire screen */
+  background-position: center center; /* Center the image */
+  height: 100vh; /* Make the section take up the full height of the viewport */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-align: center;
-  padding: 0; /* Adjust padding to fit within 100vh */
+  color: white; /* Text color to stand out against the background */
+  text-align: center; /* Center the text */
+  padding: 20px;
 }
 
+#about h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+#about p {
+  font-size: 1.2em;
+}
+
+/* Contact Section Styling */
 #contact {
   padding: 50px 20px;
   background-color: #f7f7f7;
 }
 
-/* Body styling */
+/* Contact Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.contact-header p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.contact-header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-header a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add some padding to the body for overall layout */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
