@@ -35,7 +35,7 @@ nav ul li a:hover {
 section {
   padding: 60px 20px;
   margin: 20px 0;
-  height: 100vh; /* Make each section take up the full height of the viewport */
+  height: 50vh; /* Make each section take up the full height of the viewport */
 }
 
 /* Background colors for the sections */
