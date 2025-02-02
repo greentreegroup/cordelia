@@ -92,7 +92,7 @@ h1 span + span {
   background-size: cover; /* Make the image cover the entire screen */
   background-position: center center; /* Center the image */
   background-attachment: fixed; /* Fix the background so it doesn't scroll with content */
-  height: 50vh; /* Make the section take up the full height of the viewport */
+  height: 100vh; /* Make the section take up the full height of the viewport */
   display: flex;
   justify-content: center;
   align-items: center;
